@@ -1,0 +1,27 @@
+======================================================================
+LEXICAL ANALYSIS - TOKEN LIST
+======================================================================
+TOKEN TYPE           LEXEME               LINE
+----------------------------------------------------------------------
+KEYWORD              int                  1
+IDENTIFIER           x                    1
+OPERATOR             =                    1
+INT_LITERAL          10                   1
+DELIMITER            ;                    1
+KEYWORD              int                  2
+IDENTIFIER           y                    2
+OPERATOR             =                    2
+INT_LITERAL          20                   2
+DELIMITER            ;                    2
+KEYWORD              int                  3
+IDENTIFIER           z                    3
+OPERATOR             =                    3
+IDENTIFIER           x                    3
+OPERATOR             +                    3
+IDENTIFIER           y                    3
+OPERATOR             *                    3
+INT_LITERAL          2                    3
+DELIMITER            ;                    3
+======================================================================
+Total Tokens: 19
+======================================================================
