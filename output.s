@@ -8,16 +8,30 @@ main:
     movq %rsp, %rbp
     subq $12, %rsp
     # # Program Start
-    # Declare x as int
+    # Declare a as int
     movq $10, [rbp-0]
-    # Declare y as int
+    # Declare b as int
     movq $20, [rbp-4]
-    movq [rbp-4], %rax
-    imulq $2, %rax
+    # Declare sum as int
     movq [rbp-0], %rax
-    addq %rax, %rax
-    # Declare z as int
+    addq [rbp-4], %rax
     movq %rax, [rbp-8]
+    cmpq $0, %rbx
+    je L0
+    movq [rbp-8], %rax
+    subq $5, %rax
+    movq %rax, [rbp-8]
+    jmp L1
+L0:
+L1:
+L2:
+    cmpq $0, %rdx
+    je L3
+    movq [rbp-0], %rax
+    addq $1, %rax
+    movq %rax, [rbp-0]
+    jmp L2
+L3:
     # # Program End
 
     movq $0, %rax

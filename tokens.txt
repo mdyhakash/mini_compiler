@@ -3,25 +3,53 @@ LEXICAL ANALYSIS - TOKEN LIST
 ======================================================================
 TOKEN TYPE           LEXEME               LINE
 ----------------------------------------------------------------------
-KEYWORD              int                  1
-IDENTIFIER           x                    1
-OPERATOR             =                    1
-INT_LITERAL          10                   1
-DELIMITER            ;                    1
 KEYWORD              int                  2
-IDENTIFIER           y                    2
+IDENTIFIER           a                    2
 OPERATOR             =                    2
-INT_LITERAL          20                   2
+INT_LITERAL          10                   2
 DELIMITER            ;                    2
 KEYWORD              int                  3
-IDENTIFIER           z                    3
+IDENTIFIER           b                    3
 OPERATOR             =                    3
-IDENTIFIER           x                    3
-OPERATOR             +                    3
-IDENTIFIER           y                    3
-OPERATOR             *                    3
-INT_LITERAL          2                    3
+INT_LITERAL          20                   3
 DELIMITER            ;                    3
+KEYWORD              int                  4
+IDENTIFIER           sum                  4
+DELIMITER            ;                    4
+IDENTIFIER           sum                  6
+OPERATOR             =                    6
+IDENTIFIER           a                    6
+OPERATOR             +                    6
+IDENTIFIER           b                    6
+DELIMITER            ;                    6
+KEYWORD              if                   8
+DELIMITER            (                    8
+IDENTIFIER           sum                  8
+OPERATOR             >                    8
+INT_LITERAL          25                   8
+DELIMITER            )                    8
+DELIMITER            {                    8
+IDENTIFIER           sum                  9
+OPERATOR             =                    9
+IDENTIFIER           sum                  9
+OPERATOR             -                    9
+INT_LITERAL          5                    9
+DELIMITER            ;                    9
+DELIMITER            }                    10
+KEYWORD              while                12
+DELIMITER            (                    12
+IDENTIFIER           a                    12
+OPERATOR             <                    12
+IDENTIFIER           b                    12
+DELIMITER            )                    12
+DELIMITER            {                    12
+IDENTIFIER           a                    13
+OPERATOR             =                    13
+IDENTIFIER           a                    13
+OPERATOR             +                    13
+INT_LITERAL          1                    13
+DELIMITER            ;                    13
+DELIMITER            }                    14
 ======================================================================
-Total Tokens: 19
+Total Tokens: 47
 ======================================================================
